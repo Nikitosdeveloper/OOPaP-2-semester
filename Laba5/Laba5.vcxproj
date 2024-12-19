@@ -18,36 +18,11 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="AlphaPixel.cpp" />
-    <ClCompile Include="ConverterSystem.cpp" />
-    <ClCompile Include="Converting.cpp" />
-    <ClCompile Include="File.cpp" />
-    <ClCompile Include="ImageFile.cpp" />
-    <ClCompile Include="JpgFile.cpp" />
-    <ClCompile Include="MyExceptions.cpp" />
-    <ClCompile Include="Pixel.cpp" />
-    <ClCompile Include="PngFile.cpp" />
-    <ClCompile Include="PngJpgConverter.cpp" />
-    <ClCompile Include="Source.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="AlphaPixel.h" />
-    <ClInclude Include="ConverterSystem.h" />
-    <ClInclude Include="Converting.h" />
-    <ClInclude Include="File.h" />
-    <ClInclude Include="ImageFile.h" />
-    <ClInclude Include="JpgFile.h" />
-    <ClInclude Include="MyExceptions.h" />
-    <ClInclude Include="Pixel.h" />
-    <ClInclude Include="PngFile.h" />
-    <ClInclude Include="PngJpgConverter.h" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{8f3f37f5-ddde-498e-bf2a-59de987159cb}</ProjectGuid>
-    <RootNamespace>Laba2</RootNamespace>
+    <ProjectGuid>{cb0bb902-2138-4e59-93e2-4abf00550ad5}</ProjectGuid>
+    <RootNamespace>Laba5</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -151,6 +126,17 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AgreculturalSystemV3.cpp" />
+    <ClCompile Include="AgriculturalMachinery.cpp" />
+    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="SparesSets.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AgreculturalSystemV3.h" />
+    <ClInclude Include="AgriculturalMachinery.h" />
+    <ClInclude Include="SparesSets.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

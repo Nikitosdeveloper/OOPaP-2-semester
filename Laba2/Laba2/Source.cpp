@@ -1,7 +1,7 @@
-#include "D:\”нивер\3 семестр\ќќѕиѕ\OOPaP 2 semester\Laba1\ConverterSystem.h"
+#include "ConverterSystem.h"
 #include <Windows.h>
 #include <iostream>
-
+//Laba_2
 int main() {
 
     SetConsoleCP(1251);

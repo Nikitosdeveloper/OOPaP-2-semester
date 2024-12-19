@@ -1,5 +1,8 @@
 #include "ConverterSystem.h"
 
+
+
+
 void ConverterSystem::convert()
 {
 	std::cout << "Какой файл из какого вы будете конвертировать?" << std::endl;
@@ -47,7 +50,7 @@ void ConverterSystem::menu()
 		std::cin >> choice;
 
 		if (std::cin.bad()) {
-			std::cout << "Критическая ошибка!";
+			std::cerr << "Критическая ошибка!";
 			exit(1);
 		}
 
@@ -116,7 +119,18 @@ void ConverterSystem::convertJpgToPng()
 
 		std::cout << "Файл успешно конвертирован" << std::endl;
 
-		historyOfConvertation_.push_back(Converting(png.getFilePath(), converter->getTimeOfLastConverting()));
+		Converting conv(png.getFilePath(), converter->getTimeOfLastConverting());
+		
+		std::ofstream file;
+		file.open("history_of_convertation.dat", std::ios::app | std::ios::binary);
+
+		if (file.is_open()) {
+			file << conv;
+			file.close();
+		}
+		else {
+			std::cerr << "Ошибка файл не открыт!" << std::endl;
+		}
 
 		delete converter;
 	}
@@ -170,7 +184,17 @@ void ConverterSystem::convertPngToJpg()
 
 		std::cout << "Файл успешно конвертирован" << std::endl;
 
-		historyOfConvertation_.push_back(Converting(jpg.getFilePath(), converter->getTimeOfLastConverting()));
+		Converting conv(png.getFilePath(), converter->getTimeOfLastConverting());
+		std::ofstream file;
+		file.open("history_of_convertation.dat", std::ios::app | std::ios::binary);
+
+		if (file.is_open()) {
+			file << conv;
+			file.close();
+		}
+		else {
+			std::cerr << "Ошибка файл не открыт!" << std::endl;
+		}
 
 		delete converter;
 	}
@@ -187,6 +211,10 @@ void ConverterSystem::convertPngToJpg()
 
 void ConverterSystem::showHistoryOfConverting()
 {
+	if (!readHistoryOfConvertationFromFile()) {
+		return;
+	}
+
 	calculateSizeFileName();
 	calculateSizeTimeOfConvertation();
 
@@ -277,4 +305,34 @@ void ConverterSystem::calculateSizeTimeOfConvertation()
 	for (int i = 0; i < historyOfConvertation_.size(); i++) {
 		sizeTimeOfConvertation_ = std::max(sizeTimeOfConvertation_, int(std::to_string(historyOfConvertation_[i].getConvertationTimeInSecond()).size()));
 	}
+}
+
+bool ConverterSystem::readHistoryOfConvertationFromFile()
+{
+	historyOfConvertation_.clear();
+	std::ifstream file;
+	file.open("history_of_convertation.dat", std::ios::in | std::ios::binary);
+
+	if (file.is_open()) {
+		while (!file.eof()) {
+			try
+			{
+				Converting conv;
+				file >> conv;
+				historyOfConvertation_.push_back(conv);
+			}
+			catch (std::bad_alloc&)
+			{
+				break;
+			}
+			
+		}
+		file.close();
+		return true;
+	}
+	else {
+		std::cerr << "Ошибка! файл не открыт" << std::endl;
+		return false;
+	}
+
 }

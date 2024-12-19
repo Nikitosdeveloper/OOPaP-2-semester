@@ -15,34 +15,34 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Laba1\AlphaPixel.cpp">
+    <ClCompile Include="AlphaPixel.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Laba1\ConverterSystem.cpp">
+    <ClCompile Include="ConverterSystem.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Laba1\Converting.cpp">
+    <ClCompile Include="Converting.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Laba1\File.cpp">
+    <ClCompile Include="File.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Laba1\ImageFile.cpp">
+    <ClCompile Include="ImageFile.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Laba1\JpgFile.cpp">
+    <ClCompile Include="JpgFile.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Laba1\MyExceptions.cpp">
+    <ClCompile Include="MyExceptions.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Laba1\Pixel.cpp">
+    <ClCompile Include="Pixel.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Laba1\PngFile.cpp">
+    <ClCompile Include="PngFile.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Laba1\PngJpgConverter.cpp">
+    <ClCompile Include="PngJpgConverter.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="Source.cpp">
@@ -50,34 +50,34 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Laba1\AlphaPixel.h">
+    <ClInclude Include="AlphaPixel.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Laba1\ConverterSystem.h">
+    <ClInclude Include="ConverterSystem.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Laba1\Converting.h">
+    <ClInclude Include="Converting.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Laba1\File.h">
+    <ClInclude Include="ImageFile.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Laba1\ImageFile.h">
+    <ClInclude Include="JpgFile.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Laba1\JpgFile.h">
+    <ClInclude Include="MyExceptions.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Laba1\MyExceptions.h">
+    <ClInclude Include="Pixel.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Laba1\Pixel.h">
+    <ClInclude Include="PngFile.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Laba1\PngFile.h">
+    <ClInclude Include="PngJpgConverter.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Laba1\PngJpgConverter.h">
+    <ClInclude Include="File.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

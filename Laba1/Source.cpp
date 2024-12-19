@@ -10,6 +10,7 @@ int main() {
     set_terminate(myTerminate);
 
     ConverterSystem sys;
+
     sys.menu();
 
     return 0;

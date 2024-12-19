@@ -11,7 +11,7 @@ std::string Converting::getFileName()
 	return fileName_;
 }
 
-double Converting::getConvertationTimeInSecond_()
+double Converting::getConvertationTimeInSecond()
 {
 	return convertationTimeInSecond_;
 }

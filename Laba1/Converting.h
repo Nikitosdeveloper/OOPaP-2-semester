@@ -8,7 +8,8 @@ public:
 	Converting(std::string fileName, int convertationTimeInSecond);
 
 	std::string getFileName();
-	double getConvertationTimeInSecond_();
+	double getConvertationTimeInSecond();
+
 
 private:
 	std::string fileName_;
